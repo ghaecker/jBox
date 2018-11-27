@@ -113,7 +113,7 @@
       reposition: true,            // Calculates new position when the window-size changes
       repositionOnOpen: true,      // Calculates new position each time jBox opens (rather than only when it opens the first time)
       repositionOnContent: true,   // Calculates new position when the content changes with .setContent() or .setTitle()
-      holdPosition: false,         // Keeps current position if space permits. Applies only to 'Modal' type.
+      holdPosition: true,          // Keeps current position if space permits. Applies when draggable != false
       
       // Pointer
       pointer: false,              // Your pointer will always point towards the target element, so the option outside needs to be 'x' or 'y'. By default the pointer is centered, set a position to move it to any side. You can also add an offset, e.g. 'left:30' or 'center:-20'
@@ -1926,7 +1926,7 @@
   };
   
   // Set property to control zIndex assignment behavior
-  jBox.useTrueModal   = false; // if true, jBoxes with overlay:true behave as true modals
+  jBox.useTrueModal   = true;  // if true, jBoxes with overlay:true behave as true modals
   jBox.zIndexModalMax = 20000; // used only if jBox.useTrueModal is true
   jBox.zIndexMax      = 10000; // used only by non-modal jBoxes if jBox.useTrueModal is true,
                                // otherwise, used by all jBoxes.

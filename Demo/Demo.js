@@ -1,9 +1,6 @@
 
 $(document).ready(function() {
 
-/* Switch on unique zIndex behavior for jBoxes with overlay:true */
-jBox.useTrueModal = true;
-
 /* Tooltip */
 
 new jBox('Tooltip', {
@@ -195,8 +192,7 @@ var holdPos = new jBox('Modal', {
   content: $('#hold-pos-content > div.norm').clone(),
   overlay: false,
   reposition: false,
-  repositionOnOpen: false,
-  holdPosition: true 
+  repositionOnOpen: false
 });
 
 // Handle wider/taller selection events
