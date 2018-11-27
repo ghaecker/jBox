@@ -6,6 +6,10 @@ Demo: https://stephanwagner.me/jBox
 
 Docs: https://stephanwagner.me/jBox/documentation
 
+This fork of Stephan Wagner's jBox plugin began with his v0.5.2.  To the extent possible, new features and enhancements added in this fork will be implemented as optional features without altering default behavior of the upstream plugin.  The following optional features have been added so far:
+
+  * trueModel &mdash; new jBox property to stack JBoxes with overlays at the top of the zIndex stack so that they cover other jBoxes.
+  * holdPosition &mdash; new jBox option to prevent a draggable jBox from reverting back to its orginal positions after it has been moved/dragged to a different position. It also constrains the jBox to the viewport when dragged over a viewport edge or when size changes via setContent() or setTitle().
 
 ## Tooltips
 
