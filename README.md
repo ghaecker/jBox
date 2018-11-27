@@ -6,6 +6,10 @@ Demo: https://stephanwagner.me/jBox
 
 Docs: https://stephanwagner.me/jBox/documentation
 
+This branch (personal) is what I use in my own projects. It overrides upstream jBox defaults with my own preferences. To date, the following overrides are in effect:
+
+  * trueModal &mdash; default is true
+  * holdPosition &mdash; default is true
 
 ## Tooltips
 
