@@ -8,7 +8,7 @@ Docs: https://stephanwagner.me/jBox/documentation
 
 This branch (personal) is what I use in my own projects. It overrides upstream jBox defaults with my own preferences. To date, the following overrides are in effect:
 
-  * **jBox.useTrueModal** &mdash; default is true
+  * **options.zIndex: 'auto'** &mdash; default is auto for jBox with overlay
   * **options.holdPosition** &mdash; default is true
 
 ## Tooltips
