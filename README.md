@@ -6,10 +6,10 @@ Demo: https://stephanwagner.me/jBox
 
 Docs: https://stephanwagner.me/jBox/documentation
 
-This fork of Stephan Wagner's jBox plugin began with his v0.5.2.  To the extent possible, new features and enhancements added in this fork will be implemented as optional features without altering default behavior of the upstream plugin.  The following optional features have been added so far:
+This fork of Stephan Wagner's jBox plugin began with his v0.5.2.  To the extent possible, new features and enhancements added in this fork will be implemented as optional features without altering default behavior of the upstream plugin.  The following features have been added so far:
 
-  * **options.zIndex: 'auto'** &mdash; brings jBox (and its overlay) to front on open.
-  * **options.holdPosition** &mdash; prevents a draggable jBox from reverting back to its orginal position after it has been moved/dragged to a different position. It also constrains the jBox to the viewport when dragged over a viewport edge or when size changes via setContent() or setTitle().
+  * **options.zIndex: 'auto'** &mdash; brings jBox (and its overlay) to front on open. (Merged into StephanWagner/jBox)
+  * **options.holdPosition** &mdash; prevents a draggable jBox from reverting back to its orginal position after it has been moved/dragged to a different position. It also constrains the jBox to the viewport when dragged over a viewport edge or when size changes via setContent() or setTitle(). (Merged into StephanWagner/jBox)
 
 ## Tooltips
 
