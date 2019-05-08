@@ -1,6 +1,6 @@
 {
   "name": "jbox",
-  "version": "0.5.3",
+  "version": "0.8.0",
   "description": "jBox is a jQuery plugin that makes it easy to create customizable tooltips, modal windows, image galleries and more.",
   "keywords": [
     "jquery-plugin",
@@ -29,18 +29,20 @@
   "author": "Stephan Wagner <stephanwagner.me@gmail.com> (https://stephanwagner.me)",
   "license": "MIT",
   "main": "dist/jBox.js",
+  "types": "src/js/jBox.d.ts",
   "dependencies": {
-    "jquery": "^3.3.1"
+    "jquery": "^3.4.1"
   },
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-clean-css": "^3.9.3",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.2.0",
     "gulp-concat": "^2.6.1",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^3.1.0",
-    "gulp-sourcemaps": "^2.6.4",
-    "gulp-uglify": "^3.0.0",
-    "jest": "^21.2.1"
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
+    "jest": "^24.8.0",
+    "unscroll": "^1.0.6"
   },
   "scripts": {
     "test": "jest"
