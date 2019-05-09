@@ -206,6 +206,7 @@
         target: jQuery(window),
         fixed: true,
         blockScroll: true,
+        blockScrollAdjust: false,
         closeOnEsc: true,
         closeOnClick: 'overlay',
         closeButton: true,
