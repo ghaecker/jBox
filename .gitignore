@@ -2,8 +2,9 @@
 *.js.map
 *.css.map
 
-# npm
+# npm and distribution files created by gulp
 node_modules
+dist/*
 
 # OS generated files
 .DS_Store
