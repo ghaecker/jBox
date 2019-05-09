@@ -1,11 +1,11 @@
 /**
  * jBox is a jQuery plugin that makes it easy to create customizable tooltips, modal windows, image galleries and more.
  *
- * Author: Stephan Wagner (https://stephanwagner.me)
+ * Author: Stephan Wagner <stephanwagner.me@gmail.com> (https://stephanwagner.me)
  *
  * License: MIT (https://opensource.org/licenses/MIT)
  *
- * Requires: jQuery 3.2.1 (https://code.jquery.com/jquery-3.2.1.min.js)
+ * Requires: jQuery 3.4.1 (https://code.jquery.com/jquery-3.4.1.min.js)
  *
  * Documentation: https://stephanwagner.me/jBox/documentation
  *
@@ -13,7 +13,7 @@
  */
 
 
-// AMD and CommonJS support: http://ifandelse.com/its-not-hard-making-your-library-support-amd-and-commonjs
+// AMD and CommonJS support: https://github.com/umdjs/umd
 
 (function (root, factory) {
 
@@ -129,6 +129,7 @@
       theme: 'Default',            // Set a jBox theme class
       addClass: null,              // Adds classes to the wrapper
       overlay: false,              // Adds an overlay to hide page content when jBox opens (adjust color and opacity with CSS)
+      overlayClass: null,          // Add a class name to the overlay
       zIndex: 10000,               // Use a high z-index, or set to 'auto' to bring to front on open
 
       // Delays
@@ -622,6 +623,9 @@
           zIndex: this.options.zIndex - 1
         }).appendTo(this.options.appendTo);
 
+        // Add a class name to the overlay
+        this.options.overlayClass && this.overlay.addClass(this.options.overlayClass);
+
         // Add close button to overlay
         (this.options.closeButton == 'overlay' || this.options.closeButton === true) && this.overlay.append(this.closeButton);
 
@@ -1037,7 +1041,6 @@
     if (!this.title) {
       this.titleContainer = jQuery('<div class="jBox-title"/>');
       this.title = jQuery('<div/>').appendTo(this.titleContainer);
-      this.wrapper.addClass('jBox-hasTitle');
       if (this.options.closeButton == 'title' || (this.options.closeButton === true && !this.options.overlay)) {
         this.wrapper.addClass('jBox-closeButton-title');
         this.closeButton.appendTo(this.titleContainer);
@@ -1045,6 +1048,11 @@
       this.titleContainer.insertBefore(this.content);
       this._setTitleWidth();
     }
+
+    // Add or remove wrapper class
+    this.wrapper[title ? 'addClass' : 'removeClass']('jBox-hasTitle');
+
+    // Set title html
     this.title.html(title);
 
     // Adjust width of title
@@ -1711,8 +1719,8 @@
       var remaining = this.options.delayClose;
       var prevFrame = Date.now();
       if (this.options.showCountdown && !this.inner) {
-        var outer = jQuery('<div class="jBox-countdown"></div>');
-        this.inner = jQuery('<div class="jBox-countdown_inner"></div>');
+        var outer = jQuery('<div class="jBox-countdown" />');
+        this.inner = jQuery('<div class="jBox-countdown-inner" />');
         outer.prepend(this.inner);
         jQuery('#' + this.id).append(outer);
       }
