@@ -17,14 +17,14 @@
     "images",
     "lightbox"
   ],
-  "homepage": "https://stephanwagner.me/jBox",
+  "homepage": "https://grhdev.com/jBox",
   "repository": {
     "type": "git",
-    "url": "https://github.com/StephanWagner/jBox.git"
+    "url": "https://github.com/ghaecker/jBox.git"
   },
   "bugs": {
-    "url": "https://github.com/StephanWagner/jBox/issues",
-    "email": "stephanwagner.me@gmail.com"
+    "url": "https://github.com/ghaecker/jBox/issues",
+    "email": "ghaecker@gmail.com"
   },
   "author": "Stephan Wagner <stephanwagner.me@gmail.com> (https://stephanwagner.me)",
   "license": "MIT",
